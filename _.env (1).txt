@@ -1,0 +1,12 @@
+NODE_ENV=production
+PORT=10000
+JWT_SECRET=mother_margaret_secure_key_2024
+EMAIL_USER=mothermargaretjuniorschools.ug@gmail.com
+EMAIL_PASSWORD=temporary123
+SCHOOL_NAME=Mother Margaret Junior School and Daycare
+SCHOOL_ADDRESS=Namuyenje, Mukono, Uganda
+SCHOOL_PHONE_1=0708 840 282
+SCHOOL_PHONE_2=0704 702 301
+SCHOOL_PHONE_3=0747 677 562
+SCHOOL_EMAIL=mothermargaretjuniorschools.ug@gmail.com
+FRONTEND_URL=https://mothermargaretjuniorschoolanddaycare.vercel.app
