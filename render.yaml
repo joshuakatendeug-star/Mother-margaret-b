@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: mother-margaret-school-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: EMAIL_USER
+        value: mothermargaretjuniorschools.ug@gmail.com
+      - key: SCHOOL_NAME
+        value: Mother Margaret Junior School and Daycare
+      - key: SCHOOL_EMAIL
+        value: mothermargaretjuniorschools.ug@gmail.com
+      - key: SCHOOL_PHONE_1
+        value: "0708 840 282"
+      - key: SCHOOL_PHONE_2
+        value: "0704 702 301"
+      - key: SCHOOL_PHONE_3
+        value: "0747 677 562"
+      - key: DEEPSEEK_API_KEY
+        value: sk-76eb1ec5080a47528092f1be6884a506
+    healthCheckPath: /health
+    autoDeploy: true
+
+databases:
+  - name: mother-margaret-db
+    plan: free
+    databaseName: mother_margaret
+    user: mother_margaret_user
